@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>은천제일교회</title>
+    <link rel="stylesheet" href="./notification.css">
+</head>
+
+<body>
+
+    <header>
+        <a class="logo" href="../main/euncheon.html">
+            <img src="../image/euncheonlogo.png" alt="은천제일교회">
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#guide">교회안내</a>
+                    <ul class="dropdown">
+                        <li><a href="../guide/churchIntroduce.html">교회 소개</a></li>
+                        <li><a href="../guide/pastorIntroduce.html">담임목사 소개</a></li>
+                        <li><a href="../guide/ministerIntroduce.html">교역자 소개</a></li>
+                        <li><a href="../guide/newFamilyIntroduce.html">새가족 안내</a></li>
+                        <li>
+                            <a href="#zoneIntroduce">구역 소개</a>
+                            <ul class="sub-dropdown">
+                                <li><a href="../guide/zoneIntroduce/zone1.html">1구역</a></li>
+                                <li><a href="../guide/zoneIntroduce/zone2.html">2구역</a></li>
+                                <li><a href="../guide/zoneIntroduce/zone3.html">3구역</a></li>
+                                <li><a href="../guide/zoneIntroduce/zone4.html">4구역</a></li>
+                                <li><a href="../guide/zoneIntroduce/zone5.html">5구역</a></li>
+                                <li><a href="../guide/zoneIntroduce/zone6.html">6구역</a></li>
+                                <li><a href="../guide/zoneIntroduce/zone7.html">7구역</a></li>
+                                <li><a href="../guide/zoneIntroduce/zone8.html">8구역</a></li>
+                                <li><a href="../guide/zoneIntroduce/zone9.html">9구역</a></li>
+                                <li><a href="../guide/zoneIntroduce/zone10.html">10구역</a></li>
+                                <li><a href="../guide/zoneIntroduce/zone11.html">11구역</a></li>
+                                <li><a href="../guide/zoneIntroduce/zone12.html">12구역</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../guide/directions.html">오시는 길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#worship">예배</a>
+                    <ul class="dropdown">
+                        <li><a href="../worship/worshipIntroduce.html">예배 안내</a></li>
+                        <li><a href="../worship/sundaySchool.html">교회학교</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#tidings">소식</a>
+                    <ul class="dropdown">
+                        <li><a href="./weekly.html">주보 게시판</a></li>
+                        <li><a href="./notification.html">공지사항</a></li>
+                        <li><a href="./gallery.html">갤러리</a></li>
+                        <li><a href="./pray.html">중보 기도방</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <button class="login-btn" onclick="openModal()">로그인</button>
+    </header>
+
+    <body>
+        <main>
+            <!-- 공지사항 입력 폼 -->
+            <section class="notice-form">
+                <input type="text" id="notice-title" placeholder="공지사항 제목" required>
+                <textarea id="notice-content" placeholder="공지사항 내용을 입력하세요" required></textarea>
+                <button onclick="addNotice()">공지사항 추가</button>
+            </section>
+
+            <!-- 공지사항 목록 -->
+            <section class="notice" id="notice-list"></section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Euncheon Is Church</p>
+        </footer>
+
+        <script src="./notification.js"></script>
+        <script src="../main/euncheon.js"></script>
+
+    </body>
+
+</html>
